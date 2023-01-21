@@ -27,7 +27,7 @@
 }
 
 .fgimg{
-    transform: translateZ(-20px) scale(3);
+    transform: translateZ(-20px) scale(2);
 }
 
 .bgimg, .fgimg{
@@ -50,12 +50,13 @@ h1{
 section{
     background-color: black;
     color:white;
-    padding:5rem 0;
+    /* padding:5rem 0; */
 }
 
 .secHeading{
     font-size:5rem;
     padding:0 10 rem;
+    text-align: center;
 }
 
 .text{
