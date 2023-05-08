@@ -25,12 +25,3 @@ https://user-images.githubusercontent.com/97353931/216097901-2ff88fe2-8000-4d48-
 
 
 
-# INCREMENT AND DECREMENT
-
-
-
-![image](https://user-images.githubusercontent.com/97353931/236855493-2fbf1b6b-2435-43c5-8ed4-f120029dea62.png)
-
-
-
-
