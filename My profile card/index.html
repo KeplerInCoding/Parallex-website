@@ -12,9 +12,10 @@
         .circle1 {
             position: fixed;
             top: 5%;
-            left: 10%;
+            left: 5%;
             width: 13em;
             height: 13em;
+            z-index: -2;
             border-radius: 50%;
             box-shadow: 0 0 50px #d84869;
             background: linear-gradient(-25deg, #e02f58, #0c0b0b);
@@ -23,7 +24,7 @@
         
         @keyframes circle1Animate {
             50% {
-            left: 18%;
+            left: 15%;
             top: 4%;
             scale: 1.11;
             }
@@ -31,10 +32,11 @@
         
         .circle2 {
             position: absolute;
-            bottom: 5%;
-            right: 5%;
+            bottom: 7%;
+            right: 2%;
             width: 19em;
             height: 19em;
+            z-index: -2;
             border-radius: 50%;
             box-shadow: 0 0 50px #425d3e;
             background: linear-gradient(-25deg, #000000, #356552);
@@ -42,8 +44,8 @@
         }
         @keyframes circle2Animate {
             50% {
-            bottom: 6%;
-            right: 6%;
+            bottom: 3%;
+            right: 4%;
             }
         }
     </style>
@@ -61,9 +63,9 @@
                 src="./assets/MyImg.jpg"
                 width="300px"/>
             </div>
-            <div class="space-y-16">
-                <div class="p-6">Share My Profile</div>
-                <div class="p-6">Visit My Website</div>
+            <div class="flex flex-col space-y-14">
+                <button style="border:0.5px solid white" class="font-semibold p-3 px-5 rounded-3xl bg-white/10 hover:bg-white/20">VIEW MY PROFILES</button>
+                <button style="border:0.5px solid white" class="font-semibold p-3 px-5 rounded-3xl bg-white/10 hover:bg-white/20">VISIT MY WEBSITE</button>
             </div>
         </wrapper>
     </wrapper>
