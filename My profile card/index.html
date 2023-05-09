@@ -57,19 +57,56 @@
         <div class="circle2"></div>
         <h1 style="text-shadow: 2px 1px 3px rgb(60, 172, 182);" class="text-center font-serif font-extrabold text-4xl pt-10">SHREYA SHARMA</h1>
         <h2 class="font-medium text-lg text-center pt-3 pb-7">A Passionate Engineer From India</h3>
-        <wrapper class="h-fit w-96 min-w-fit py-16 px-14 border-4 rounded-md border-black flex items-center justify-center space-x-12 bg-black/20 hover:bg-black/30 shadow-2xl shadow-red-600">
+        <wrapper class="h-fit w-96 min-w-fit py-16 px-14 border-4 rounded-md border-black flex items-center justify-center space-x-12 bg-black/20 hover:bg-black/30 shadow-2xl shadow-red-600 backdrop-filter backdrop-blur-sm">
             <div> 
                 <img class="border-2 rounded-l-3xl shadow-sm shadow-white"
                 src="./assets/MyImg.jpg"
                 width="300px"/>
             </div>
             <div class="flex flex-col space-y-14">
-                <button style="border:0.5px solid white" class="font-semibold p-3 px-5 rounded-3xl bg-white/10 hover:bg-white/20">VIEW MY PROFILES</button>
-                <button style="border:0.5px solid white" class="font-semibold p-3 px-5 rounded-3xl bg-white/10 hover:bg-white/20">VISIT MY WEBSITE</button>
+                <button onclick="openModal()" style="border:0.5px solid white" class="font-semibold p-3 px-5 rounded-3xl bg-white/10 hover:bg-white/20 flex items-center">
+                    <i class="fa-solid fa-share"></i>
+                    <div class="pl-2">View My Profiles</div>
+                </button>
+                <button style="border:0.5px solid white" class="font-semibold p-3 px-5 rounded-3xl bg-white/10 hover:bg-white/20 flex items-center">
+                    <i class="fa-solid fa-share"></i>
+                    <div class="pl-2">Visit My Website</div>
+                </button>
             </div>
         </wrapper>
     </wrapper>
+
+    <!-- modal component -->
+    <div class="modal border-2 border-white border-white/60 rounded-md fixed top-[30%] left-[30%] p-10 z-1 bg-black/80 shadow-lg shadow-red-900 backdrop-filter backdrop-blur-md">
+        <div class="flex space-x-52 pb-5 border-b-2 border-b-white/50 items-center">
+            <h1 class="text-white font-bold text-3xl">Share My Profile</h1>
+            <i onclick="closeModal()" class="fa-solid fa-xmark text-2xl text-white"></i>
+        </div>
+        <div>
+            <h2 class="text-white font-semibold text-xl p-3">Share This Via</h2>
+            <div style=" flex-wrap: wrap; justify-content: space-between;" class="p-3 space-x-5">
+                  <a href="#">
+                    <i style="border:0.5px solid rgb(69, 101, 175); color:rgb(43, 95, 215)" class="text-white rounded-full fa-brands fa-facebook-f p-4 px-6 text-4xl hover:bg-blue-400"></i>
+                  </a>
+                  <a href="#">
+                    <i  style="border:0.5px solid rgb(36, 145, 195); color:rgb(35, 158, 214)" class="text-white rounded-full fa-brands fa-twitter p-4 text-4xl hover:bg-blue-300"></i>
+                  </a>
+                  <a href="#">
+                    <i style="border:0.5px solid rgb(176, 53, 117); color:rgb(205, 39, 125)" class="text-white rounded-full fa-brands fa-instagram p-4  text-4xl hover:bg-pink-300"></i>
+                  </a>
+                  <a href="#">
+                    <i style="border:0.5px solid rgb(58, 164, 77); color: rgb(45, 189, 71)" class="text-white rounded-full fa-brands fa-whatsapp p-4 text-4xl hover:bg-green-300"></i>
+                  </a>
+                  <a href="#">
+                    <i style="border:0.5px solid rgb(23, 98, 210); color: rgb(27, 92, 190)" class="text-white rounded-full fa-brands fa-telegram p-4 text-4xl hover:bg-blue-300"></i>
+                  </a>
+            </div>
+        </div>
+    </div>
     
+    <!-- overlay -->
+    <div class="overlay" onclick="closeModal()"></div>
+
 
 
 
