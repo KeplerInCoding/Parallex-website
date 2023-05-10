@@ -1,0 +1,102 @@
+
+.circle1 {
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    width: 13em;
+    height: 13em;
+    z-index: -2;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #d84869;
+    background: linear-gradient(-25deg, #e02f58, #0c0b0b);
+    animation: circle1Animate 15s infinite;
+}
+
+@keyframes circle1Animate {
+    50% {
+    left: 15%;
+    top: 4%;
+    scale: 1.11;
+    }
+}
+
+.circle2 {
+    position: absolute;
+    bottom: 7%;
+    right: 2%;
+    width: 19em;
+    height: 19em;
+    z-index: -2;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #425d3e;
+    background: linear-gradient(-25deg, #000000, #356552);
+    animation: circle2Animate 8s infinite;
+}
+@keyframes circle2Animate {
+    50% {
+    bottom: 3%;
+    right: 4%;
+    }
+}
+ .modal{
+    scale:0;
+ }
+  .active {
+    scale: 1;
+  }
+  .overlay {
+    position: fixed;
+    background-color: #5f5f5f83;
+    top: 0;
+    opacity: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    transition: 0.5s ease-in-out;
+  }
+  .overlayactive {
+    opacity: 1;
+    pointer-events: initial;
+  }
+  @media (max-width: 850px) {
+    .card-wrapper {
+      max-width: 250px;
+      width: 300px;
+    }
+    .bottom-group {
+      flex-direction: column;
+    }
+    .modal {
+      width: 80vw;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .card-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-wrapper div img {
+      width: 120px;
+      height: 120px;
+    }
+    
+    .button{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+    }
+    .modal {
+        width: 100vw;
+      }
+  }

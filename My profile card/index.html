@@ -1,69 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
-    <link rel="shortcut icon" href="./assets/Slogo.ico" type="image/x-icon">
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <style>
-        .circle1 {
-            position: fixed;
-            top: 5%;
-            left: 5%;
-            width: 13em;
-            height: 13em;
-            z-index: -2;
-            border-radius: 50%;
-            box-shadow: 0 0 50px #d84869;
-            background: linear-gradient(-25deg, #e02f58, #0c0b0b);
-            animation: circle1Animate 15s infinite;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Profile</title>
+        <link rel="shortcut icon" href="./assets/Slogo.ico" type="image/x-icon">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./style.css" />
         
-        @keyframes circle1Animate {
-            50% {
-            left: 15%;
-            top: 4%;
-            scale: 1.11;
-            }
-        }
-        
-        .circle2 {
-            position: absolute;
-            bottom: 7%;
-            right: 2%;
-            width: 19em;
-            height: 19em;
-            z-index: -2;
-            border-radius: 50%;
-            box-shadow: 0 0 50px #425d3e;
-            background: linear-gradient(-25deg, #000000, #356552);
-            animation: circle2Animate 8s infinite;
-        }
-        @keyframes circle2Animate {
-            50% {
-            bottom: 3%;
-            right: 4%;
-            }
-        }
-    </style>
-  
-</head>
-<body class="h-[100vh] bg-gradient-to-t from-teal-700 to-cyan-900">
-    <wrapper class="h-[100vh] flex flex-col items-center">
+    </head>
+<body class="h-[100vh] relative bg-gradient-to-t from-teal-700 to-cyan-900">
+    <div class="wrapper h-[100vh] flex flex-col items-center">
         <div class="circle1"></div>
         <div class="circle2"></div>
         <h1 style="text-shadow: 2px 1px 3px rgb(60, 172, 182);" class="text-center font-serif font-extrabold text-4xl pt-10">SHREYA SHARMA</h1>
         <h2 class="font-medium text-lg text-center pt-3 pb-7">A Passionate Engineer From India</h3>
-        <wrapper class="h-fit w-96 min-w-fit py-16 px-14 border-4 rounded-md border-black flex items-center justify-center space-x-12 bg-black/20 hover:bg-black/30 shadow-2xl shadow-red-600 backdrop-filter backdrop-blur-sm">
+        <div class="card wrapper h-fit w-96 min-w-fit py-16 px-14 border-4 rounded-md border-black flex items-center justify-center space-x-12 bg-black/20 hover:bg-black/30 shadow-2xl shadow-red-600 backdrop-filter backdrop-blur-sm">
             <div> 
                 <img class="border-2 rounded-l-3xl shadow-sm shadow-white"
                 src="./assets/MyImg.jpg"
                 width="300px"/>
             </div>
-            <div class="flex flex-col space-y-14">
+            <div class="button flex flex-col space-y-14">
                 <button onclick="openModal()" style="border:0.5px solid white" class="font-semibold p-3 px-5 rounded-3xl bg-white/10 hover:bg-white/20 flex items-center">
                     <i class="fa-solid fa-share"></i>
                     <div class="pl-2">View My Profiles</div>
@@ -73,32 +33,32 @@
                     <div class="pl-2">Visit My Website</div>
                 </button>
             </div>
-        </wrapper>
-    </wrapper>
+        </div>
+    </div>
 
     <!-- modal component -->
-    <div class="modal border-2 border-white border-white/60 rounded-md fixed top-[30%] left-[30%] p-10 z-1 bg-black/80 shadow-lg shadow-red-900 backdrop-filter backdrop-blur-md">
+    <div class="modal border-2 border-white border-white/60 rounded-md absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-auto p-10 z-[10] bg-black/80 shadow-lg shadow-red-900 backdrop-filter backdrop-blur-md ease-in-out duration-100 ">
         <div class="flex space-x-52 pb-5 border-b-2 border-b-white/50 items-center">
             <h1 class="text-white font-bold text-3xl">Share My Profile</h1>
-            <i onclick="closeModal()" class="fa-solid fa-xmark text-2xl text-white"></i>
+            <i onclick="closeModal()" class="fa-solid fa-xmark text-2xl text-white hover:cursor-pointer"></i>
         </div>
         <div>
             <h2 class="text-white font-semibold text-xl p-3">Share This Via</h2>
-            <div style=" flex-wrap: wrap; justify-content: space-between;" class="p-3 space-x-5">
-                  <a href="#">
-                    <i style="border:0.5px solid rgb(69, 101, 175); color:rgb(43, 95, 215)" class="text-white rounded-full fa-brands fa-facebook-f p-4 px-6 text-4xl hover:bg-blue-400"></i>
+            <div style="justify-content: space-between;" class="flex p-3">
+                  <a href="https://github.com/KeplerInCoding">
+                    <i style="border:2px solid rgb(5, 5, 5); color:rgb(0, 0, 0)" class="m-1 text-white rounded-full fa-brands fa-github p-4 text-1xl hover:bg-slate-400 duration-500"></i>
                   </a>
-                  <a href="#">
-                    <i  style="border:0.5px solid rgb(36, 145, 195); color:rgb(35, 158, 214)" class="text-white rounded-full fa-brands fa-twitter p-4 text-4xl hover:bg-blue-300"></i>
+                  <a href="https://www.linkedin.com/in/shreya-sharma-104278198/">
+                    <i  style="border:0.5px solid rgb(36, 145, 195); color:rgb(35, 158, 214)" class="m-1 text-white rounded-full fa-brands fa-linkedin p-4 text-1xl hover:bg-cyan-300 duration-500"></i>
                   </a>
-                  <a href="#">
-                    <i style="border:0.5px solid rgb(176, 53, 117); color:rgb(205, 39, 125)" class="text-white rounded-full fa-brands fa-instagram p-4  text-4xl hover:bg-pink-300"></i>
+                  <a href="https://twitter.com/Shreya___20">
+                    <i style="border:0.5px solid rgb(23, 98, 210); color: rgb(27, 92, 190)" class="m-1 text-white rounded-full fa-brands fa-twitter p-4  text-1xl hover:bg-blue-300 duration-500"></i>
                   </a>
-                  <a href="#">
-                    <i style="border:0.5px solid rgb(58, 164, 77); color: rgb(45, 189, 71)" class="text-white rounded-full fa-brands fa-whatsapp p-4 text-4xl hover:bg-green-300"></i>
+                  <a href="https://www.instagram.com/shr.yey/">
+                    <i style="border:0.5px solid rgb(176, 53, 117); color:rgb(205, 39, 125)" class="m-1 text-white rounded-full fa-brands fa-instagram  p-4 text-1xl hover:bg-pink-300 duration-500"></i>
                   </a>
-                  <a href="#">
-                    <i style="border:0.5px solid rgb(23, 98, 210); color: rgb(27, 92, 190)" class="text-white rounded-full fa-brands fa-telegram p-4 text-4xl hover:bg-blue-300"></i>
+                  <a href="https://open.spotify.com/user/au3j9dyoyj8pdrn04aul2u1t3">
+                    <i style="border:0.5px solid rgb(58, 164, 77); color: rgb(45, 189, 71)" class="m-1 text-white rounded-full fa-brands fa-spotify p-4 text-1xl hover:bg-green-300 duration-500"></i>
                   </a>
             </div>
         </div>
@@ -106,11 +66,6 @@
     
     <!-- overlay -->
     <div class="overlay" onclick="closeModal()"></div>
-
-
-
-
-    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
