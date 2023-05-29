@@ -43,6 +43,23 @@ https://github.com/KeplerInCoding/Web-Projects/assets/97353931/b5c9366c-066b-455
 
 
 
+# PASSWORD GENERATOR
+
+
+
+
+https://github.com/KeplerInCoding/Web-Projects/assets/97353931/28b9b711-c628-459b-bf6a-4bdca4c02ed5
+
+
+
+
+# MODERN CHAIR
+
+
+https://github.com/KeplerInCoding/Web-Projects/assets/97353931/7f9af0ec-aa98-47f3-8654-b710b959df7b
+
+
+
 
 
 
