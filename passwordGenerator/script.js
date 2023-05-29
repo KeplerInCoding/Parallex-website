@@ -55,7 +55,7 @@ async function copyPaste()
 
 copyBtn.addEventListener('click', () => {
     if(passwordDisplay.value)
-        copyPassword();
+        copyPaste();
 })
 
 //for generating Random numbers
