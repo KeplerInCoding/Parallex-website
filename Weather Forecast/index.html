@@ -9,15 +9,26 @@
 </head>
 <body>
     <wrapper>
-        <div class="h-[100vh] bg-gradient-to-br from-rose-400 to-sky-700">
-            <div>WEATHER FORECAST</div>
+        <div class="h-[100vh] flex flex-col items-center bg-gradient-to-br from-rose-400 to-sky-700">
+            <div class="flex flex-col items-center w-6/12">
+                <div style="text-shadow:2px 2px rgb(22, 79, 154)" class="p-10 text-center font-extrabold font-mullish text-5xl">WEATHER APP</div>
 
-            <div>
-                <div>Your Weather</div>
-                <div>Search Weather</div>
+                <div class="mt-3 flex justify-between w-full items-baseline ">
+                    <div class="text-sm font-semibold">Your Weather</div>
+                    <button class="text-sm font-semibold p-3 py-1 bg-black/30 rounded-md">Search Weather</button>
+                </div>
             </div>
 
+            <!-- grant location access  -->
             <div>
+                <div>img</div>
+                <div>Grant Location Image</div>
+                <div>Allow Acces To Get Weather Information</div>
+                <button>GRANT ACCESS</button>>
+            </div>
+
+            <!-- show weather  -->
+            <!-- <div>
                 <div>
                     <div>
                         <div>Ghaziabad</div>
@@ -44,7 +55,7 @@
                         <div>speed</div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </wrapper>
     
