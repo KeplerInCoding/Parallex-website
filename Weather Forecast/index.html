@@ -9,26 +9,26 @@
 </head>
 <body>
     <wrapper>
-        <div class="h-[100vh] flex flex-col items-center bg-gradient-to-br from-rose-400 to-sky-700">
+        <div class="h-[100vh] flex flex-col items-center bg-gradient-to-br from-cyan-700 to-sky-900">
             <div class="flex flex-col items-center w-6/12">
-                <div style="text-shadow:2px 2px rgb(22, 79, 154)" class="p-10 text-center font-extrabold font-mullish text-5xl">WEATHER APP</div>
+                <div style="text-shadow:2px 2px rgb(0, 0, 0)" class="p-10 text-white text-center font-extrabold font-mullish text-5xl">WEATHER APP</div>
 
                 <div class="mt-3 flex justify-between w-full items-baseline ">
-                    <div class="text-sm font-semibold">Your Weather</div>
-                    <button class="text-sm font-semibold p-3 py-1 bg-black/30 rounded-md">Search Weather</button>
+                    <button class="text-md font-semibold text-white">Your Weather</button>
+                    <button class="text-md font-semibold text-white p-3 py-1 bg-white/30 rounded-md">Search Weather</button>
                 </div>
             </div>
 
             <!-- grant location access  -->
-            <div>
-                <div>img</div>
-                <div>Grant Location Image</div>
-                <div>Allow Acces To Get Weather Information</div>
-                <button>GRANT ACCESS</button>>
+            <div class="flex flex-col items-center mt-40 space-y-3 opacity-0 absolute ">
+                <div><img class="h-28 mt-20 mb-10" src="assets/location.png" alt="location"></img></div>
+                <div class="text-white text-4xl font-bold">Grant Location Access</div>
+                <div class="text-white text-xl">Allow Acces To Get Weather Information</div>
+                <button class="text-white text-xl font-semibold translate-y-7 p-3 py-1 bg-white/30 rounded-md">GRANT ACCESS</button>
             </div>
 
             <!-- show weather  -->
-            <!-- <div>
+            <div class="flex flex-col items-center mt-40 space-y-3 opacity-1 absolute">
                 <div>
                     <div>
                         <div>Ghaziabad</div>
@@ -38,7 +38,7 @@
                     <div>weather img</div>
                     <div>20 degree celsius</div>
                 </div>
-                <div>
+                <div class="flex justify-between w-[70vw]">
                     <div>
                         <div>icon</div>
                         <div>WINDSPEED</div>
@@ -55,7 +55,7 @@
                         <div>speed</div>
                     </div>
                 </div>
-            </div> -->
+            </div>
         </div>
     </wrapper>
     
