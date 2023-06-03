@@ -78,9 +78,9 @@ function renderWeatherInfo(data){
     const desc = document.querySelector('.desc');
     const desc_img = document.querySelector('.desc-img');
     const temp = document.querySelector('.temp');
-    const w_desc = document.querySelector('.w-desc');
-    const h_desc = document.querySelector('.h-desc');
-    const c_desc = document.querySelector('.c-desc');
+    const w_desc = document.querySelector('[w-desc]');
+    const h_desc = document.querySelector('[h-desc]');
+    const c_desc = document.querySelector('[c-desc]');
 
     city.textContent = data?.name;
     flag.src = `https://flagcdn.com/144x108/${weatherInfo?.sys?.country.toLowerCase()}.png`;
@@ -103,6 +103,26 @@ searchTab.addEventListener("click", () => {
 });
 
 const access_btn = document.querySelector('.access-btn');
+access_btn.addEventListener('click', getLocation);
+
+function getLocation(){
+    if(navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(showPosition);
+
+    }
+    else{
+        alert("Geolocation is not supported by this browser.");
+    }
+}
+
+function showPosition(position){
+    const coordinates = {
+        latitude: position.coords.latitude,
+        longitude: position.coords.longitude
+    }
+    sessionStorage.setItem("user-coordinates", JSON.stringify(coordinates));
+    fetchUserWeatherInfo(coordinates);
+}
 
 
 
