@@ -73,7 +73,23 @@ async function fetchUserWeatherInfo(coordinates){
 
 
 function renderWeatherInfo(data){
-    
+    const city = document.querySelector('.city');
+    const flag = document.querySelector('.flag');
+    const desc = document.querySelector('.desc');
+    const desc_img = document.querySelector('.desc-img');
+    const temp = document.querySelector('.temp');
+    const w_desc = document.querySelector('.w-desc');
+    const h_desc = document.querySelector('.h-desc');
+    const c_desc = document.querySelector('.c-desc');
+
+    city.textContent = data?.name;
+    flag.src = `https://flagcdn.com/144x108/${weatherInfo?.sys?.country.toLowerCase()}.png`;
+    desc.textContent = data?.weather[0]?.description;
+    desc_img.src = `https://openweathermap.org/img/wn/${data?.weather[0]?.icon}.png`;
+    temp.textContent = `${data?.main?.temp.toFixed(2)} °C`;
+    w_desc.textContent = `${data?.wind?.speed} m/s`;
+    h_desc.textContent = `${data?.main?.humidity} %`;
+    c_desc.textContent = `${data?.clouds?.all} %`;
 }
 
 userTab.addEventListener("click", () => {
@@ -85,6 +101,8 @@ searchTab.addEventListener("click", () => {
     //pass clicked tab as input paramter
     switchTab(searchTab);
 });
+
+const access_btn = document.querySelector('.access-btn');
 
 
 

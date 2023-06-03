@@ -26,35 +26,35 @@
                 <div><img class="h-28 mt-20 mb-10" src="assets/location.png" alt="location" loading="lazy"></div>
                 <div class="text-white text-4xl font-bold">Grant Location Access</div>
                 <div class="text-white text-xl">Allow Acces To Get Weather Information</div>
-                <button class="text-white text-xl font-semibold translate-y-7 p-3 py-1 bg-white/30 rounded-md  hover:text-black/50">GRANT ACCESS</button>
+                <button class="access-btn text-white text-xl font-semibold translate-y-7 p-3 py-1 bg-white/30 rounded-md  hover:text-black/50">GRANT ACCESS</button>
             </div>
 
             <!-- show weather  -->
             <div class="displayBlock flex flex-col items-center mt-36 absolute">
                 <div class="flex flex-col items-center">
                     <div class="flex pt-24 items-center">
-                        <div class="city text-white mr-6 text-3xl">Ghaziabad</div>
+                        <div class="city text-white mr-6 text-3xl"></div>
                         <img class="flag w-8 h-8" loading="lazy">
                     </div>
                     <div class="desc text-white text-xl p-3">Clouds</div>
                     <img alt="loading" class="desc-img h-16 w-16" loading="lazy">
-                    <div class="text-white text-4xl font-extrabold">20 degree celsius</div>
+                    <div class="temp text-white text-4xl font-extrabold"></div>
                 </div>
                 <div class="flex justify-between items-center w-[50vw] mt-9 flex-wrap">
                     <div class="flex flex-col items-center justify-center h-36 w-44 text-white p-3 py-1 my-2 bg-white/40 rounded-md">
                         <img src="assets/wind.png" alt="loading" class="h-14 w-14" loading="lazy">
                         <div>WINDSPEED</div>
-                        <div>speed</div>
+                        <div w-desc></div>
                     </div>
                     <div class="flex flex-col items-center justify-center h-36 w-44 text-white p-3 py-1 my-2 bg-white/40 rounded-md">
                         <img src="assets/humidity.png" alt="loading" class="h-14 w-14" loading="lazy">
                         <div>HUMIDITY</div>
-                        <div>speed</div>
+                        <div h-desc>speed</div>
                     </div>
                     <div class="flex flex-col items-center justify-center h-36 w-44 text-white p-3 py-1 my-2 bg-white/40 rounded-md">
                         <img src="assets/cloud.png" alt="loading" class="h-14 w-14" loading="lazy">
                         <div>CLOUDS</div>
-                        <div>speed</div>
+                        <div c-desc>speed</div>
                     </div>
                 </div>
             </div>
