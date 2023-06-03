@@ -64,8 +64,6 @@ https://github.com/KeplerInCoding/Web-Projects/assets/97353931/7f9af0ec-aa98-47f
 # Weather Forecast API
 
 
-https://github.com/KeplerInCoding/Web-Projects/assets/97353931/b7a42bb6-3d0c-4d87-a832-cf3d9e6e9e8b
-
 
 
 
