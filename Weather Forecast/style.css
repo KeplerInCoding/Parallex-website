@@ -1,3 +1,10 @@
 .currentTab{
     background: rgba(255, 255, 255, .3);
 }
+
+.hov{
+    cursor: pointer;
+    //text shadow
+    text-shadow: 0 0 1px #000;
+    
+}

@@ -1,17 +1,26 @@
-const userWeather = document.querySelector('.userWeather');
-const searchWeather = document.querySelector('.searchWeather');
-let currentTab = userWeather;
+const userTab = document.querySelector('.userWeather');
+const searchTab = document.querySelector('.searchWeather');
+let currentTab = userTab;
+currentTab.classList.add("currentTab");
+currentTab.classList.add("hov");
 
-searchWeather.addEventListener('click', () => {
-    currentTab.classList.add('currentTab');
-    userWeather.classList.remove('currentTab');
-    currentTab = searchWeather;
+function switchTab(newTab){
+    if(newTab!=currentTab){
+        currentTab.classList.remove("currentTab");
+        newTab.classList.add("currentTab");
+        currentTab = newTab;
+    }
+
+}
+
+userTab.addEventListener("click", () => {
+    //pass clicked tab as input paramter
+    switchTab(userTab);
 });
 
-userWeather.addEventListener('click', () => {
-    currentTab.classList.add('currentTab');
-    userWeather.classList.remove('currentTab');
-    currentTab = userWeather;
+searchTab.addEventListener("click", () => {
+    //pass clicked tab as input paramter
+    switchTab(searchTab);
 });
 
 
