@@ -1,14 +1,34 @@
 const userTab = document.querySelector('.userWeather');
 const searchTab = document.querySelector('.searchWeather');
+const access = document.querySelector('.accessBlock');
+const display = document.querySelector('.displayBlock');
+const search = document.querySelector('.searchBlock');
+const gif = document.querySelector('.gifBlock');
+
+
 let currentTab = userTab;
 currentTab.classList.add("currentTab");
-currentTab.classList.add("hov");
+display.classList.add("hidden");
+search.classList.add("hidden");
+gif.classList.add("hidden");
 
 function switchTab(newTab){
     if(newTab!=currentTab){
         currentTab.classList.remove("currentTab");
         newTab.classList.add("currentTab");
         currentTab = newTab;
+    }
+
+    if(currentTab == userTab){
+        access.classList.remove("hidden");
+        display.classList.add("hidden");
+        search.classList.add("hidden");
+    }
+
+    else if(currentTab == searchTab){
+        access.classList.add("hidden");
+        display.classList.add("hidden");
+        search.classList.remove("hidden");
     }
 
 }

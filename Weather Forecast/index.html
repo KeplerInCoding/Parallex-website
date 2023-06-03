@@ -22,15 +22,15 @@
             </div>
 
             <!-- grant location access  -->
-            <div class="flex flex-col items-center mt-40 space-y-3 opacity-0 absolute ">
+            <div class="accessBlock flex flex-col items-center mt-40 space-y-3 absolute ">
                 <div><img class="h-28 mt-20 mb-10" src="assets/location.png" alt="location" loading="lazy"></div>
                 <div class="text-white text-4xl font-bold">Grant Location Access</div>
                 <div class="text-white text-xl">Allow Acces To Get Weather Information</div>
-                <button class="text-white text-xl font-semibold translate-y-7 p-3 py-1 bg-white/30 rounded-md">GRANT ACCESS</button>
+                <button class="text-white text-xl font-semibold translate-y-7 p-3 py-1 bg-white/30 rounded-md  hover:text-black">GRANT ACCESS</button>
             </div>
 
             <!-- show weather  -->
-            <div class="flex flex-col items-center mt-36 opacity-0 absolute">
+            <div class="displayBlock flex flex-col items-center mt-36 absolute">
                 <div class="flex flex-col items-center">
                     <div class="flex pt-24 items-center">
                         <div class="text-white mr-6 text-3xl">Ghaziabad</div>
@@ -60,10 +60,10 @@
             </div>
 
             <!-- loading gif -->
-            <img src="assets/loading.gif" alt="loading..." class="h-96 w-96 opacity-0" loading="lazy">
+            <img src="assets/loading.gif" alt="loading..." class="gifBlock h-96 w-96 opacity-0" loading="lazy">
 
             <!-- search weather  -->
-            <div class="opacity-1 absolute flex top-[30%]">
+            <div class="searchBlock absolute flex top-[30%]">
                 <div class="w-[50vw]">
                     <form class="flex justify-center space-x-2">
                         <input placeholder="Search for City..." class="bg-white/40  placeholder-white font-semibold text-lg pl-3 p-1 w-[700px] rounded-lg">
