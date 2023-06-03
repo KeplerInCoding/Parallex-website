@@ -1,3 +1,6 @@
+const API_key = '547ce9cae097717245b375ca024431ed';
+
+
 const userTab = document.querySelector('.userWeather');
 const searchTab = document.querySelector('.searchWeather');
 const access = document.querySelector('.accessBlock');
@@ -20,9 +23,9 @@ function switchTab(newTab){
     }
 
     if(currentTab == userTab){
-        access.classList.remove("hidden");
         display.classList.add("hidden");
         search.classList.add("hidden");
+        accessLocation();
     }
 
     else if(currentTab == searchTab){
@@ -31,6 +34,46 @@ function switchTab(newTab){
         search.classList.remove("hidden");
     }
 
+}
+
+function accessLocation()
+{
+    const localCoordinates = sessionStorage.getItem("user-coordinates");
+    if(!localCoordinates)
+    {
+        access.classList.remove("hidden");
+    }
+    else{
+        const coordinates = JSON.parse(localCoordinates);
+        fetchUserWeatherInfo(coordinates);
+    }
+}
+
+async function fetchUserWeatherInfo(coordinates){
+    const lat = coordinates.latitude;
+    const lon = coordinates.longitude;
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_key}&units=metric`;
+    access.classList.add("hidden");
+    gif.classList.remove("hidden");
+
+    try{
+        const response = await fetch(url);
+        data = await response.json();
+
+        display.classList.remove("hidden");
+        gif.classList.add("hidden");
+
+        renderWeatherInfo(data);
+    }
+    catch(err){
+        console.log("Error : ", err);
+        loadingScreen.classList.remove("active");
+    }
+}
+
+
+function renderWeatherInfo(data){
+    
 }
 
 userTab.addEventListener("click", () => {
@@ -54,7 +97,7 @@ searchTab.addEventListener("click", () => {
 
 
 
-// const API_key = '547ce9cae097717245b375ca024431ed';
+
 
 
 // async function showWeather()
