@@ -12,7 +12,7 @@
     <wrapper>
         <div class="h-[153vh] flex flex-col items-center bg-gradient-to-br from-cyan-700 to-sky-900">
             <div class="flex flex-col items-center w-full">
-                <div style="text-shadow:2px 2px rgb(0, 0, 0)" class="p-10 text-white text-center font-extrabold font-mullish text-5xl">WEATHER APP</div>
+                <div style="text-shadow:2px 2px rgb(0, 0, 0)" class="p-7 text-white text-center font-extrabold font-mullish text-5xl">WEATHER APP</div>
                 
                 <!-- switch tab  -->
                 <div class=" flex justify-between w-6/12 items-baseline ">
@@ -30,31 +30,41 @@
             </div>
 
             <!-- show weather  -->
-            <div class="displayBlock flex flex-col items-center mt-36 absolute">
+            <div class="displayBlock flex flex-col items-center top-[-6%] mt-40 absolute">
                 <div class="flex flex-col items-center">
                     <div class="flex pt-24 items-center">
-                        <div class="city text-white mr-6 text-3xl"></div>
-                        <img class="flag w-8 h-8" loading="lazy">
+                        <!-- city name  -->
+                        <div class="city text-white mr-6 text-4xl font-semibold"></div>
+                        <!-- flag  -->
+                        <img class="flag h-10" loading="lazy">
                     </div>
-                    <div class="desc text-white text-xl p-3">Clouds</div>
-                    <img alt="loading" class="desc-img h-16 w-16" loading="lazy">
+
+                    <!-- description  -->
+                    <div class="desc text-white text-xl p-3"></div>
+                    <img alt="loading" class="desc-img w-24" loading="lazy">
+                    <!-- temperature  -->
                     <div class="temp text-white text-4xl font-extrabold"></div>
                 </div>
+
+                <!-- cards  -->
                 <div class="flex justify-between items-center w-[50vw] mt-9 flex-wrap">
-                    <div class="flex flex-col items-center justify-center h-36 w-44 text-white p-3 py-1 my-2 bg-white/40 rounded-md">
+                    <!-- card 1  -->
+                    <div class="flex flex-col items-center justify-center h-36 w-44 text-white p-3 py-1 my-2 bg-white/30 rounded-md">
                         <img src="assets/wind.png" alt="loading" class="h-14 w-14" loading="lazy">
                         <div>WINDSPEED</div>
                         <div w-desc></div>
                     </div>
-                    <div class="flex flex-col items-center justify-center h-36 w-44 text-white p-3 py-1 my-2 bg-white/40 rounded-md">
+                    <!-- card 2  -->
+                    <div class="flex flex-col items-center justify-center h-36 w-44 text-white p-3 py-1 my-2 bg-white/30 rounded-md">
                         <img src="assets/humidity.png" alt="loading" class="h-14 w-14" loading="lazy">
                         <div>HUMIDITY</div>
-                        <div h-desc>speed</div>
+                        <div h-desc></div>
                     </div>
-                    <div class="flex flex-col items-center justify-center h-36 w-44 text-white p-3 py-1 my-2 bg-white/40 rounded-md">
-                        <img src="assets/cloud.png" alt="loading" class="h-14 w-14" loading="lazy">
+                    <!-- card 3  -->
+                    <div class="flex flex-col items-center justify-center h-36 w-44 text-white p-3 py-1 my-2 bg-white/30 rounded-md">
+                        <img src="assets/cloud.png" alt="loading" class="h-14 w-20" loading="lazy">
                         <div>CLOUDS</div>
-                        <div c-desc>speed</div>
+                        <div c-desc></div>
                     </div>
                 </div>
             </div>
@@ -63,10 +73,10 @@
             <img src="assets/loading.gif" alt="loading..." class="gifBlock h-96 w-96" loading="lazy">
 
             <!-- search weather  -->
-            <div class="searchBlock absolute flex top-[30%]">
+            <div class="searchBlock absolute flex top-[24%]">
                 <div class="w-[50vw]">
-                    <form class="flex justify-center space-x-2">
-                        <input placeholder="Search for City..." class="bg-white/40  placeholder-white font-semibold text-lg pl-3 p-1 w-[700px] rounded-lg">
+                    <form class="searchForm flex justify-center space-x-2">
+                        <input placeholder="Search for City..." class="bg-white/30  placeholder-white font-semibold text-lg pl-3 p-1 w-[700px] rounded-lg" data-searchInput >
                         <button class="btn" type="submit">
                             <img src="./assets/search.png"  width="28" height="28" loading="lazy">
                         </button>
