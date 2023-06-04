@@ -42,6 +42,8 @@ function fillBox(index){
         count++;
         grid[index]= currentPlayer;
         boxes[index].innerText = currentPlayer;
+        swapPlayer();
+        current.innertText = `Current Player : ${currentPlayer}`;
         checkWin();
         if(count===9)
         {
@@ -49,10 +51,8 @@ function fillBox(index){
             btn.classList.remove("hidden");
             boxes.forEach((box) => {
                 box.style.pointerEvents = "none";
-            })
+            });
         }
-        swapPlayer();
-        current.innertText = `Current Player : ${currentPlayer}`;
         
     }
 };
