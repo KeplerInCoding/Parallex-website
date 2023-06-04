@@ -49,7 +49,7 @@ function fillBox(index){
         checkWin();
         if(count===9)
         {
-            current.innertText = "Game Tied !";
+            current.innerText = "Game Tied !";
             btn.classList.remove("hidden");
             boxes.forEach((box) => {
                 box.style.pointerEvents = "none";
