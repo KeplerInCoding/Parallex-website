@@ -5,8 +5,9 @@ const current = document.querySelector(".current");
 
 let currentPlayer;
 let grid;
+let count;
 newGame();
-let count = 0;
+
 
 
 const winPos= [
@@ -16,6 +17,7 @@ const winPos= [
 ];
 
 function newGame(){
+    count=0;
     grid=["","","","","","","","",""];
     currentPlayer="X";
     current.innerText = `Current Player : ${currentPlayer}`;
@@ -43,7 +45,7 @@ function fillBox(index){
         grid[index]= currentPlayer;
         boxes[index].innerText = currentPlayer;
         swapPlayer();
-        current.innertText = `Current Player : ${currentPlayer}`;
+        current.innerText = `Current Player : ${currentPlayer}`;
         checkWin();
         if(count===9)
         {
@@ -61,7 +63,7 @@ function checkWin(){
     winPos.forEach((position)=>{
         if(grid[position[0]] === grid[position[1]] && grid[position[1]] === grid[position[2]] && grid[position[0]] !== ""){
             btn.classList.remove("hidden");
-            current.innertText = `Winner Player : ${currentPlayer}`;
+            current.innerText = `Winner Player : ${currentPlayer}`;
             boxes.forEach((box) => {
                 box.style.pointerEvents = "none";
             })
@@ -72,7 +74,7 @@ function checkWin(){
 };
 
 function swapPlayer(){
-    if(currentPlayer = "X")
+    if(currentPlayer === "X")
     {
         currentPlayer = "O";
     }
