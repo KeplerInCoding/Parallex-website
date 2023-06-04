@@ -6,11 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
     <link href="style.css" rel="stylesheet">
-    <script src="script.js"></script>
-    //tailwind cdn
-     
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
+    <div class="h-[100vh] bg-gradient-to-tr from-green-200 via-pink-300 to-blue-400 flex flex-col items-center justify-evenly">
+        <div>
+            <div class="font-mono text-3xl font-semibold">Current Player : X</div>
+        </div>
+
+        <div>
+            <div class="shadow-lg shadow-pink-700 bg-black/10 w-80 h-80 grid grid-cols-3 p-5 ">
+                <div style="text-shadow: 1px 1px 8px rgb(255, 255, 255);" class="component font-bold text-4xl text-red-900 border-r border-b  grid place-content-center hover:text-black">1</div>
+                <div style="text-shadow: 1px 1px 8px rgb(255, 255, 255);" class="component font-bold text-4xl text-red-900 component border-r component border-b grid place-content-center hover:text-black">2</div>
+                <div style="text-shadow: 1px 1px 8px rgb(255, 255, 255);" class="component font-bold text-4xl text-red-900 border-b grid place-content-center hover:text-black">3</div>
+                <div style="text-shadow: 1px 1px 8px rgb(255, 255, 255);" class="component font-bold text-4xl text-red-900  component border-r border-b grid place-content-center hover:text-black">4</div>
+                <div style="text-shadow: 1px 1px 8px rgb(255, 255, 255);" class="component font-bold text-4xl text-red-900 component border-r border-b grid place-content-center hover:text-black">5</div>
+                <div style="text-shadow: 1px 1px 8px rgb(255, 255, 255);" class="component font-bold text-4xl text-red-900 border-b grid place-content-center hover:text-black">6</div>
+                <div style="text-shadow: 1px 1px 8px rgb(255, 255, 255);" class="component font-bold text-4xl text-red-900 component border-r grid place-content-center hover:text-black">7</div>
+                <div style="text-shadow: 1px 1px 8px rgb(255, 255, 255);" class="component font-bold text-4xl text-red-900 component border-r grid place-content-center hover:text-black">8</div>
+                <div style="text-shadow: 1px 1px 8px rgb(255, 255, 255);" class="component font-bold text-4xl text-red-900 grid place-content-center hover:text-black">9</div>
+            </div>
+        </div>
+
+        <div>
+            <button class="p-9 py-3 rounded-full border border-black bg-gradient-to-tl hover:bg-gradient-to-tr font-mono text-3xl font-semibold">New Game</button>
+        </div>
+    </div>
 </body>
 </html>
