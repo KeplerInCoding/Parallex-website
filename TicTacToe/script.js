@@ -5,9 +5,9 @@ const current = document.querySelector(".current");
 
 let currentPlayer;
 let grid;
-btn.classList.add("hidden");
 newGame();
 let count = 0;
+
 
 const winPos= [
     [0,1,2], [3,4,5], [6,7,8], //rows
@@ -19,11 +19,12 @@ function newGame(){
     grid=["","","","","","","","",""];
     currentPlayer="X";
     current.innerText = `Current Player : ${currentPlayer}`;
-    btn.classList.remove("active");
-    boxes[position[0]].classList.remove("win");
-    boxes[position[1]].classList.remove("win");
-    boxes[position[2]].classList.remove("win");
-    boxes.forEach(box => box.innerText = "");
+    btn.classList.add("hidden");
+    boxes.forEach((box , index) => {
+        box.innerText = " ";
+        boxes[index].style.pointerEvents = "all";
+        box.classList.remove("win");
+    });
 
 };
 
@@ -44,7 +45,7 @@ function fillBox(index){
         checkWin();
         if(count===9)
         {
-            alert("Match Drawn !");
+            current.innertText = "Game Tied !";
             btn.classList.remove("hidden");
             boxes.forEach((box) => {
                 box.style.pointerEvents = "none";
@@ -60,12 +61,12 @@ function checkWin(){
     winPos.forEach((position)=>{
         if(grid[position[0]] === grid[position[1]] && grid[position[1]] === grid[position[2]] && grid[position[0]] !== ""){
             btn.classList.remove("hidden");
-            alert("Congratulations Player : "+currentPlayer+" You Won !");
+            current.innertText = `Winner Player : ${currentPlayer}`;
             boxes.forEach((box) => {
                 box.style.pointerEvents = "none";
             })
+            p = position;
             win(position);
-            // btn.innerText = `${currentPlayer} has won!`;
         }
     })
 };
@@ -81,7 +82,7 @@ function swapPlayer(){
     }
 };
 
-function win(){
+function win(position){
     boxes[position[0]].classList.add("win");
     boxes[position[1]].classList.add("win");
     boxes[position[2]].classList.add("win");
