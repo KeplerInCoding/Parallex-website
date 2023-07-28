@@ -4,7 +4,7 @@ import Cards from './Cards';
 function Tours ({tours, removeTour}) {
     return(
         <div>
-            <div>Plan With Love</div>
+            <div className="bg-slate-600 h-96">Plan With Love</div>
             <div>
                 {
                     tours.map((tour)=>{

@@ -1,1 +1,4 @@
 /* write your css here */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
