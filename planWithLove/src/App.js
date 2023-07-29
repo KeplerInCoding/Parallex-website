@@ -14,10 +14,18 @@ const App = () => {
   }
 
 
-  
+  if(tours.length===0){
+    return(
+      <div>
+        <h1>No Tours Left</h1>
+        <button onClick={()=>setTours(data)}>Refresh</button>
+      </div>
+    )
+  }
+
   return (
-    <div>
-      <Tours tours={tours} removeTour={removeTour}></Tours>
+    <div className="flex flex-col items-center">
+      <Tours className="flex flex-col items-center" tours={tours} removeTour={removeTour}></Tours>
     </div>
   )
 };
