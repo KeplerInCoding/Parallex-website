@@ -25,7 +25,7 @@ function Cards({id, name, info, image, price, removeTour}){
 
                 <div className="ml-2 mr-2 text-xs font-semibold">
                     {description}
-                    <span className="text-blue-500 font-bold hover:cursor" onClick={readmoreHandler}>
+                    <span className="text-blue-500 font-bold hover:cursor-pointer" onClick={readmoreHandler}>
                         {readmore ? ` Show less` : ` Read more`}
                     </span>
                 </div>
