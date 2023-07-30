@@ -12,7 +12,7 @@ function Cards({id, name, info, image, price, removeTour}){
     }
 
     return(
-        <div className="w-64 h-[450px] bg-white m-2 flex flex-col items-center justify-between shadow-sm shadow-black hover:scale-[1.02] duration-100 hover:shadow-lg hover:shadow-black">
+        <div className="w-64 h-[450px] bg-white m-2 flex flex-col items-center justify-between shadow-sm shadow-black hover:scale-[1.02] duration-100 hover:shadow-lg hover:shadow-black rounded-sm">
             <div className="h-60 w-60 mb-2">
                 <img className="object-cover aspect-square mt-2" src={image} alt="loading..."></img>
             </div>
