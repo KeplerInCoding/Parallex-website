@@ -25,7 +25,7 @@ const App = () => {
 
   return (
     <div className="flex flex-col items-center">
-      <Tours className="flex flex-col items-center" tours={tours} removeTour={removeTour}></Tours>
+      <Tours tours={tours} removeTour={removeTour}></Tours>
     </div>
   )
 };
