@@ -46,7 +46,7 @@ https://github.com/KeplerInCoding/Web-Projects/assets/97353931/b5c9366c-066b-455
 # PASSWORD GENERATOR
 
 
-
+password-generator-001.vercel.app
 
 https://github.com/KeplerInCoding/Web-Projects/assets/97353931/28b9b711-c628-459b-bf6a-4bdca4c02ed5
 
@@ -64,7 +64,7 @@ https://github.com/KeplerInCoding/Web-Projects/assets/97353931/7f9af0ec-aa98-47f
 # Weather Forecast API
 
 
-
+weather-forecast-001.vercel.app
 
 
 https://github.com/KeplerInCoding/Web-Projects/assets/97353931/343a96a2-0a9b-47fe-90e7-94a1049f75a3
@@ -82,7 +82,7 @@ https://github.com/KeplerInCoding/Web-Projects/assets/97353931/6b6f07ca-874d-46a
 
 # TIC TAC TOE
 
-
+tic-tac-toe-001.vercel.app
 
 
 https://github.com/KeplerInCoding/Web-Projects/assets/97353931/249c424d-efad-4252-b0e9-5bb96ceb1d3e
@@ -108,11 +108,15 @@ https://github.com/KeplerInCoding/Web-Projects/assets/97353931/e3ba9ae7-b024-421
 # PLAN WITH LOVE
 
 
+https://plan-with-love-react.vercel.app/
 
 
 
 
-https://github.com/KeplerInCoding/Web-Projects/assets/97353931/f655f037-9659-4b7a-a4eb-81b10fc50846
+
+https://github.com/KeplerInCoding/Web-Projects/assets/97353931/e8395e15-8d06-446d-97e6-cea3e974317c
+
+
 
 
 
