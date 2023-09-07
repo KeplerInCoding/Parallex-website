@@ -37,7 +37,7 @@ https://user-images.githubusercontent.com/97353931/216097901-2ff88fe2-8000-4d48-
 
 # MY PROFILE CARD
 
-
+https://myprofilecard-shreyasharma.netlify.app/
 
 https://github.com/KeplerInCoding/Web-Projects/assets/97353931/b5c9366c-066b-455b-ac76-34f7e324eb89
 
@@ -46,7 +46,7 @@ https://github.com/KeplerInCoding/Web-Projects/assets/97353931/b5c9366c-066b-455
 # PASSWORD GENERATOR
 
 
-password-generator-001.vercel.app
+https://password-generator-001.vercel.app
 
 https://github.com/KeplerInCoding/Web-Projects/assets/97353931/28b9b711-c628-459b-bf6a-4bdca4c02ed5
 
@@ -64,7 +64,7 @@ https://github.com/KeplerInCoding/Web-Projects/assets/97353931/7f9af0ec-aa98-47f
 # Weather Forecast API
 
 
-weather-forecast-001.vercel.app
+https://weather-forecast-001.vercel.app
 
 
 https://github.com/KeplerInCoding/Web-Projects/assets/97353931/343a96a2-0a9b-47fe-90e7-94a1049f75a3
@@ -82,7 +82,7 @@ https://github.com/KeplerInCoding/Web-Projects/assets/97353931/6b6f07ca-874d-46a
 
 # TIC TAC TOE
 
-tic-tac-toe-001.vercel.app
+https://tic-tac-toe-001.vercel.app
 
 
 https://github.com/KeplerInCoding/Web-Projects/assets/97353931/249c424d-efad-4252-b0e9-5bb96ceb1d3e
